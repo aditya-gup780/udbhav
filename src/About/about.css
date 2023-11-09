@@ -1,5 +1,5 @@
 * {
-  background-color: #273440;
+  background: #273440;
 }
 
 .udbhav,
@@ -11,21 +11,25 @@
 }
 .success1 img {
   opacity: 80%;
+  box-shadow: 0 0 8px 8px rgb(98, 87, 70);
+  border-radius: 3%;
 }
 .container,
 .container2,
 .udbhav3 {
   width: 50%;
   padding: 60px 7px;
-  color: blanchedalmond;
+  color: #ffede3;
   font-family: "Baloo 2", sans-serif;
   font-family: "DM Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 .container {
-  text-shadow: 5px 2px #373535, 2px 4px #2f3133, 3px 5px #363839;
+  /* text-shadow: 5px 2px #373535, 2px 4px #2f3133, 3px 5px #363839; */
   transform: translateX(-20%);
   padding: 60px -2px;
+  background: transparent;
 }
 @keyframes aditya {
   0% {
@@ -36,33 +40,41 @@
   }
 }
 .container h1 {
-  text-shadow: 5px 2px #a09d9d, 2px 4px #2f3133, 3px 5px #363839;
+  /* text-shadow: 5px 2px #a09d9d, 2px 4px #2f3133, 3px 5px #363839; */
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
+    #0d1526 0%,
+    #273440 20%,
+    #cab8a6 67%,
+    #cab8a6 100%
   );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
+  color: #ffede3;
   background-clip: text;
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite, aditya 1.5s ease-in-out;
+  animation: textclip 2s linear infinite, aditya 3s ease-in-out;
   animation-timing-function: view();
   display: inline-block;
 }
 .container p {
-  animation: aditya 2.5s ease-in-out;
-  animation-timing-function: view();
+  animation: aditya 1s ease-in-out;
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  view-timeline-inset: 70% -100px;
+  line-height: 1.5rem;
+  background: transparent;
+
+  /* background-color: #ffede3 #f2d8c9 #cab8a6 #273440 #0d1526; */
 }
 .success1 {
   animation: aditya 2.5s ease-in-out;
-  animation-timing-function: view();
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  view-timeline-inset: 70% -100px;
 }
 @keyframes textclip {
   to {
@@ -71,12 +83,13 @@
 }
 
 .container2 {
-  padding: 20px 40px;
+  padding: 20px 100px;
   padding-left: 90px;
+  background: transparent;
 }
 .pitch1 {
   width: 100%;
-  margin-top: 50px;
+  margin-top: 100px;
   margin-left: 80px;
   margin-right: 40px;
 }
@@ -85,7 +98,11 @@
   opacity: 100%;
   filter: blur(0);
   animation: blurAnimation 2.5s ease-in-out;
-  animation-timing-function: view();
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  view-timeline-inset: 70% -100px;
+  box-shadow: 0 0 8px 8px rgba(227, 220, 220, 0.5);
+  border-radius: 3%;
 }
 @keyframes blurAnimation {
   0% {
@@ -98,17 +115,22 @@
 
 .udbhav3 {
   /* background: blanchedalmond; */
-  color: blanchedalmond;
+  color: #ffede3;
   margin: 4px auto;
   width: 100%;
 }
 .wallstreet h1 {
-  animation: aditya 2.5s ease-in-out;
-  animation-timing-function: view();
+  animation: aditya 2.5s ease-in-out 3s;
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  /* animation-timing-function: view(); */
 }
+
 .wallstreet div {
   animation: aditya 2.5s ease-in-out;
-  animation-timing-function: view();
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  view-timeline-inset: 70% -100px;
 }
 .udbhav3 h1,
 .udbhav3 div {
@@ -119,38 +141,42 @@
   content: "";
   position: absolute;
   width: 6px;
-  height: 165%;
-  background-color: rgb(242, 242, 246);
+
+  background-color: #eeedec;
   top: 10%;
   left: 5%;
   z-index: 2;
   border-radius: 20%;
+
   animation: moveline 4s linear forwards;
 }
 @keyframes moveline {
-  0% {
+  from {
     height: 0px;
   }
-  100% {
-    height: 177%;
+  to {
+    height: 234%;
   }
 }
 
 .udbhav3 {
-  background: url("./images/wal.jpg") 8px scroll;
+  background: url("./images/wal.jpg");
+  background-position: 0cap;
   background-repeat: no-repeat;
   background-size: 100%;
   height: 300px;
-  opacity: 50%;
+  opacity: 20%;
 
   /* animation: moveline 4s linear forwards; */
 }
+
 .wallstreet h1,
 .wallstreet div {
-  color: rgb(217, 238, 181);
+  color: #ffede3;
   font-family: "Baloo 2", sans-serif;
   font-family: "DM Sans", sans-serif;
   font-family: "Poppins", sans-serif;
+
   background: transparent;
 }
 .wallstreet {
@@ -160,12 +186,15 @@
   position: relative;
   top: -400px;
   background: transparent;
+}
+.wallstreet h1 {
+  color: #ffede3;
   background-image: linear-gradient(
     -225deg,
-    #eff0f0 0%,
-    #eff4f8 29%,
-    rgba(255, 255, 255, 0.645) 67%,
-    rgba(249, 249, 246, 0.912) 100%
+    #e3f1ff 0%,
+    #979695 29%,
+    #ffede3 67%,
+    #ffede3 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -175,7 +204,20 @@
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  animation: textclip 2s linear infinite, appear 5s;
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  view-timeline-inset: 70% -100px;
+}
+@keyframes appear {
+  to {
+    opacity: 0;
+    tranform: scale(0);
+  }
+  from {
+    opacity: 100;
+    transform: scale(2);
+  }
 }
 @media (max-width: 770px) {
   .udbhav {
@@ -183,11 +225,15 @@
   }
   .pitch1 {
     animation: lightmedia 2.5s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .success1 {
     animation: lightmedia 2.5s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .udbhav1 {
     flex-direction: column-reverse;
@@ -216,11 +262,15 @@
   }
   .container h1 {
     animation: udbhavmedia 2s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .container p {
     animation: udbhavmedia 2s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .success1 {
     width: 80%;
@@ -228,26 +278,34 @@
   }
   .container2 {
     width: 100%;
-    margin-left: -4%;
+    margin-left: 0%;
   }
   .container2 h1 {
     animation: udbhavmedia 2.5s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .container2 p {
     animation: udbhavmedia 2.5s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .line1::after {
     background-color: #273440;
   }
   .wallstreet h1 {
     animation: lightmedia 2.5s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .wallstreet div {
     animation: lightmedia 2.5s ease-in-out;
-    animation-timing-function: view();
+    view-timeline-name: --subjectReveal;
+    animation-timeline: --subjectReveal;
+    view-timeline-inset: 70% -100px;
   }
   .udbhav3 {
     animation: blu 2s;
@@ -322,10 +380,10 @@
   text-transform: uppercase;
   background-image: linear-gradient(
     -225deg,
-    #273440 0%,
-    rgb(0, 195, 255) 29%,
-    blanchedalmond 67%,
-    rgb(229, 187, 124) 100%
+    #0d1526 0%,
+    #273440 20%,
+    #cab8a6 67%,
+    #cab8a6 100%
   );
   background-size: auto auto;
   background-clip: border-box;
@@ -338,11 +396,17 @@
   animation: textclip 2s linear infinite, about 3s ease-in-out;
   animation-timing-function: view();
   display: inline-block;
+
   /* animation: about 3s ease-in-out 1s; */
 }
 .container2 p {
-  animation: about 3s ease-in-out;
-  animation-timing-function: view();
+  animation: about 0.1ms ease-in-out;
+
+  line-height: 1.5rem;
+  background: transparent;
+  view-timeline-name: --subjectReveal;
+  animation-timeline: --subjectReveal;
+  view-timeline-inset: 70% -100px;
 }
 @keyframes about {
   0% {
@@ -357,4 +421,38 @@
   to {
     background-position: 200% center;
   }
+}
+.box {
+  position: absolute;
+  width: 100%;
+  height: 179%;
+  z-index: -1;
+  background: linear-gradient(90deg, #62709a 0%, #4f5961 50%, #1a3245 100%);
+}
+.box div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid #ededf5;
+}
+.box div:nth-child(1) {
+  top: 70%;
+  left: 6%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(2) {
+  top: 70%;
+  left: 6%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(3) {
+  top: 70%;
+  left: 6%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(4) {
+  top: 70%;
+  left: 6%;
+  animation: animate 6s linear infinite;
 }

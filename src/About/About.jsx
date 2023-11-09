@@ -1,4 +1,4 @@
-import pitch from "./images/pitch1.jpg";
+import pitch from "./images/UDBHAV.jpg";
 import successvector from "./images/success.jpg";
 import "./about.css";
 
@@ -7,6 +7,8 @@ function About() {
     <>
       <div className="lines">
         <div className="line1"></div>
+
+        <div className="l1"></div>
       </div>
       <div className="udbhav">
         <div className="pitch1">
